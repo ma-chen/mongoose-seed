@@ -180,7 +180,7 @@ Seeder.prototype.disconnect = function () {
 };
 
 Seeder.prototype.getMongooseModel = function (modelName) {
-  mongoose.model(modelName);
+  return mongoose.model(modelName);
 };
 
 module.exports = new Seeder();
