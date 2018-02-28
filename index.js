@@ -179,4 +179,8 @@ Seeder.prototype.disconnect = function () {
   mongoose.disconnect();
 };
 
+Seeder.prototype.getMongooseModel = function (modelName) {
+  mongoose.model(modelName);
+};
+
 module.exports = new Seeder();
